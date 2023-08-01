@@ -62,22 +62,6 @@ $font-family-roboto: Roboto, sans-serif, serif;
 $font-family-base: $font-family-noto;
 $font-family-en: $font-family-roboto;
 
-$font-size-base: 1rem !default;
-$font-size: (
-    1: $font-size-base * .875, //14px
-    2: $font-size-base, //16px
-    3: $font-size-base * 1.125, //18px
-    4: $font-size-base * 1.1875, //19px
-    5: $font-size-base * 1.25, //20px
-    6: $font-size-base * 1.5, //24px
-    7: $font-size-base * 2, //32px
-    8: $font-size-base * 2.25, //36px
-    9: $font-size-base * 2.265, //42px
-    10: $font-size-base * 3, //48px
-    11: $font-size-base * 4, //64px
-    12: $font-size-base * 6.25, //100px
-) !default;
-
 $line-height-base: 1.5;
 
 $font-weight-regular: 400 !default;
@@ -92,25 +76,3 @@ $font-weight: (
 ) !default;
 
 $font-weight-base: $font-weight-regular !default;
-
-$spacer: 1rem !default;
-$spacers: (
-    0: 0,
-    1: $spacer * .25, //4px
-    2: $spacer * .375, //6px
-    3: $spacer * .5, //8px
-    4: $spacer * .75, //12px
-    5: $spacer, //16px
-    6: $spacer * 1.25, //20px
-    7: $spacer * 1.5, //24px
-    8: $spacer * 2, //32px
-    9: $spacer * 2.25, //36px
-    10: $spacer * 2.5, //40px
-    11: $spacer * 3, //48px
-    12: $spacer * 4, //64px
-    13: $spacer * 5, // 80px
-    14: $spacer * 6, //96px
-    15: $spacer * 9, //144px
-    16: $spacer * 18.5, //296px
-) !default;
-
