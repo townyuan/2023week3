@@ -1,4 +1,59 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header{
+  background: $primary;
+}
+
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+
+  .logo{
+    width: 80px;
+    margin: 12px 0;
+  }
+
+  @include md{
+    flex-direction: column;
+    justify-content: start;
+    /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+    margin: 0 -12px;
+    max-width: 100%;
+  }
+}
+
+
+
+.nav{
+  display: flex;
+  justify-content: end;
+
+  a{
+    padding: 25px 32px;
+    color: $white;
+    font-size: map-get($font-size, 5);
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+
+  @include md{
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0;
+
+    ul{
+      margin: 0 -12px;
+      padding: 0 -12px;
+    }
+
+    li{
+      width: 50%;
+      margin-right: 0px;
+      text-align: center;
+      border: 1px solid $white;
+      a{
+        padding: 12px 0;
+      }
+    }
+  }
 }

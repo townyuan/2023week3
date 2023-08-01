@@ -1,0 +1,15 @@
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+  // padding: 0 12px;
+
+  @include lg{
+    max-width: 920px;
+    // padding: 0 36px;
+  }
+
+  @include md{
+    max-width: 720px;
+    // padding: 0 12px;
+  }
+}

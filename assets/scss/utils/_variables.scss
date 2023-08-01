@@ -1,0 +1,116 @@
+/* color system*/
+
+/* 紅色系 */
+$red: #AA0601;
+$red-500: #9F1213;
+$red-700: #650300;
+$pink: #FBF2F2;
+$orange: #B75929;
+$brown: #5F3E2D;
+
+
+/* 黑白灰色系 */
+$white: #FFFFFF;
+$gray-100: #F2F2F2;
+$gray-200: #DEE2E6;
+$gray-300: #DCDCDC;
+$gray-400: #CED4DA;
+$gray-500: #707070;
+$gray-600: #555555;
+$gray-700: #495057;
+$gray-800: #212529;
+$gray-900: #0A0A0A;
+$black: #000000;
+
+/* 色系 */
+$primary: $red;
+$primary-dark: $red-700;
+$secondary: $pink;
+$info:$red-500;
+$product-brown: $brown;
+$product-orange: $orange;
+$light: $gray-500;
+$dark: $gray-200;
+
+/* Map */
+$theme-colors: (
+  "primary": $primary,
+  "$primary-dark": $primary-dark,
+  "secondary": $secondary,
+  "info": $info,
+  "$product-light": $product-orange,
+  "$product-brown": $product-brown,
+  "light": $light,
+  "dark": $dark
+);
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+
+$font-family-noto: Noto Sans TC, sans-serif, serif;
+$font-family-roboto: Roboto, sans-serif, serif;
+
+$font-family-base: $font-family-noto;
+$font-family-en: $font-family-roboto;
+
+$font-size-base: 1rem !default;
+$font-size: (
+    1: $font-size-base * .875, //14px
+    2: $font-size-base, //16px
+    3: $font-size-base * 1.125, //18px
+    4: $font-size-base * 1.1875, //19px
+    5: $font-size-base * 1.25, //20px
+    6: $font-size-base * 1.5, //24px
+    7: $font-size-base * 2, //32px
+    8: $font-size-base * 2.25, //36px
+    9: $font-size-base * 2.265, //42px
+    10: $font-size-base * 3, //48px
+    11: $font-size-base * 4, //64px
+    12: $font-size-base * 6.25, //100px
+) !default;
+
+$line-height-base: 1.5;
+
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 900 !default;
+$font-weight: (
+    1: $font-weight-regular,
+    2: $font-weight-medium,
+    3: $font-weight-bold,
+    4: $font-weight-black,
+) !default;
+
+$font-weight-base: $font-weight-regular !default;
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * .25, //4px
+    2: $spacer * .375, //6px
+    3: $spacer * .5, //8px
+    4: $spacer * .75, //12px
+    5: $spacer, //16px
+    6: $spacer * 1.25, //20px
+    7: $spacer * 1.5, //24px
+    8: $spacer * 2, //32px
+    9: $spacer * 2.25, //36px
+    10: $spacer * 2.5, //40px
+    11: $spacer * 3, //48px
+    12: $spacer * 4, //64px
+    13: $spacer * 5, // 80px
+    14: $spacer * 6, //96px
+    15: $spacer * 9, //144px
+    16: $spacer * 18.5, //296px
+) !default;
+

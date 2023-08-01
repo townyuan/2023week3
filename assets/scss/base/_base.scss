@@ -1,0 +1,20 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: $line-height-base; //1.5
+  font-family: $font-family-base; //思源黑體
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  font-family: $font-family-base;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
