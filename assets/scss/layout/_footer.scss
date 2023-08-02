@@ -1,4 +1,161 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer{
+  background-color: $primary;
+  padding: 60px 0 32px 0;
+
+  @include md{
+    padding: 24px 0;
+  }
+}
+
+.footer-box{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.footer-menu{
+  display: flex;
+  margin-bottom: 24px;
+
+  li{
+    margin-right: 48px;
+
+    a{
+      color: $white;
+      padding: 12px 0;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+  }
+  
+
+  @include md{
+    display: none;
+  }
+}
+
+.footer-info{
+
+  li{
+    display: flex;
+    align-items: center;
+
+    a{
+      color: $white;
+      font-size: 36px;
+    }
+
+    span{
+      color: $white;
+      margin-right: 22px;
+      font-size: 40px;
+      align-self: flex-end;
+    }
+  }
+
+  @include md{
+    li {
+      a{
+        font-size: 16px;
+      }
+      span{
+        font-size: 20px;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+.footer-share{
+  display: flex;
+  justify-content: end;
+
+  li{
+    margin-right: 24px;
+
+    a{
+      text-align: right;
+      img{
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &:nth-last-child(1){
+      margin-right: 0;
+    }
+  }
+
+  @include md{
+
+    li{
+      margin-right: 8px;
+
+      a img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.footer-copyright{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $white;
+  padding-top: 32px;
+
+  p{
+    display: block;
+    color: $white;
+  }
+
+  ul{
+    display: flex;
+    justify-content: end;
+
+    li a{
+      font-size: 14px;
+      color: $white;
+      margin-left: 48px;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+
+  @include md{
+    justify-content: start;
+    flex-wrap: wrap;
+
+    p{
+      width: 100%;
+      margin-bottom:8px;
+    }
+
+    ul{
+      justify-content: start;
+      flex-wrap: wrap;
+  
+      li {
+        width: 100%;
+        margin-bottom: 8px;
+        a{
+          font-size: 16px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
