@@ -1,3 +1,389 @@
-.index-title {
-  font-size: 100px;
+.bg-img{
+  background: url(/assets/images/home-header.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include md{
+    background: url(/assets/images/home-header-sm.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.home-header{
+  text-align: right;
+  padding: 296px 0;
+
+  .button{
+    display: inline-block;
+    color: $white;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: $primary;
+    font-weight: $font-weight-medium;
+
+    &:hover{
+      background-color: $pink;
+      color: $primary-dark;
+    }
+  }
+  @include lg{
+    padding: 296px 36px;
+  }
+  @include md{
+    padding: 144px 12px;
+
+    h4{
+      font-size: 16px;
+    }
+    h2{
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.intro-bg{
+  background-color: $pink;
+  padding: 80px 0;
+  margin-bottom: 80px;
+  text-align: center;
+
+  @include md{
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+}
+
+.intro-box{
+  h3{
+    margin-bottom: 36px;
+  }
+
+  @include md{
+    h3{
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.intro-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  @include lg{
+    flex-wrap: wrap;
+  }
+}
+
+.intro-card{
+  width: 25%;
+
+  span{
+    font-size: 84px;
+    font-weight: $font-weight-bold;
+    color: $primary-dark;
+    margin-bottom: 24px;
+  }
+  p.title{
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    color: $primary-dark;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  p{
+    text-align: left;
+  }
+
+  @include lg{
+    width: 48%;
+    margin-bottom: 50px;
+  }
+
+  @include md{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.classic-box{
+  margin-bottom: 80px;
+
+  h3{
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .classic-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    li{
+      width: 33%;
+      p{
+        font-size: $font-family-roboto;
+        font-weight: $font-weight-bold;
+        color: $primary;
+        font-size: 48px;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+  }
+
+  @include lg{
+    .classic-card{
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li{
+        width: 100%;
+        margin-bottom: 24px;
+        text-align: center;
+
+        img{
+          width: 336px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  @include md{
+    h3{
+      font-size: 24px;
+    }
+  }
+}
+
+.design-bg{
+  background: url(/assets/images/index-bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.design-box{
+  padding: 80px 0;
+  margin-bottom: 80px;
+
+  h3{
+    text-align: center;
+    margin-bottom: 48px;
+    color: $white;
+  }
+
+  .design-content{
+    display: flex;
+    gap: 0;
+
+    li{
+      width: 50%;
+
+      p{
+        font-size: $font-family-roboto;
+        font-weight: $font-weight-bold;
+        color: $primary;
+        font-size: 48px;
+        font-style: italic;
+        text-align: center;
+        padding: 8px;
+        background-color: $white;
+      }
+    }
+  }
+
+  @include lg{
+    padding: 80px 36px;
+    .design-content{
+      flex-wrap: wrap;
+
+      li{
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include md{
+    margin-bottom: 40px;
+    h3{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    padding: 40px 12px;
+  }
+}
+
+
+.customer-box{
+  margin-bottom: 80px;
+
+  h3{
+    text-align: center;
+    margin-bottom: 48px;
+    color: $primary-dark;
+  }
+
+  .customer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    li{
+      width: 25%;
+      outline: 1px solid $gray-200;
+      border-radius: 4px;
+      box-shadow: 0px 2px 6px #00000029;
+
+      .customer-card-item{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+        p.name{
+          font-weight: $font-weight-medium;
+          margin-bottom: 8px;
+        }
+        p{
+          flex-grow: 1;
+        }
+
+        span{
+          display: block;
+          font-size: 14px;
+          color: $gray-500;
+          margin-top: 72px;
+        }
+      }
+    }
+
+    @include lg{
+      flex-wrap: wrap;
+      gap: 10px;
+      li{
+        width: 48%;
+        margin-bottom: 20px;
+      }
+    }
+    @include md{
+      li{
+        width: 100%;
+        margin-bottom: 16px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include md{
+    margin-bottom: 40px;
+  }
+}
+
+.contact-bg{
+  background-color: $pink;
+  padding: 80px 0;
+
+  @include md{
+    padding: 40px 0;
+  }
+}
+
+.contact-box{
+  max-width: 636px;
+
+  h3{
+    text-align: center;
+    margin-bottom: 48px;
+    color: $primary-dark;
+  }
+  p{
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  @include lg{
+    width: 100%;
+    padding: 0 36px;
+  }
+
+  @include md{
+    padding: 0 12px;
+    h3{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.contact-content{
+
+  li{
+    margin-bottom: 16px;
+    line-height: 2;
+    input.w100{
+      width: 100%;
+      height: 36px;
+      padding: 6px 12px;
+      background-color: $pink;
+      border: 1px solid $black;
+    }
+    textarea.w100{
+      width: 100%;
+      height: 136px;
+      padding: 8px;
+      background-color: $pink;
+    }
+    input.check{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .mb-3{
+    margin-bottom: 48px;
+  }
+  .text-center{
+    text-align: center;
+
+    .btn{
+      color: $white;
+      background-color: $primary;
+      padding: 16px 176px;
+      border: 0;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $primary-dark;
+      }
+    }
+  }
+
+  @include md{
+
+    .text-center{
+      text-align: center;
+
+      .btn{
+        color: $white;
+        background-color: $primary;
+        padding: 16pxx;
+        width: 100%;
+        border: 0;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $primary-dark;
+        }
+      }
+    }
+  }
 }

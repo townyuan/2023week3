@@ -1,1 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+
+
+
+h2{
+  font-size: 64px;
+  color: $primary-dark;
+  font-weight: $font-weight-bold;
+}
+
+h3{
+  font-size: 48px;
+  color: $primary-dark;
+  font-weight: $font-weight-bold;
+}
+
+h4{
+  font-size: 36px;
+  color: $primary-dark;
+}
