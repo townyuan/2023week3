@@ -1,0 +1,238 @@
+/* 門市據點 */
+
+.shop-title{
+  color: $black;
+  border-left: 8px solid $primary;
+  font-size: 48px;
+  font-weight: $font-weight-bold;
+  padding-left: 16px;
+  margin-top: 96px;
+  margin-bottom: 33px;
+
+  @include lg{
+    margin-top: 80px;
+  }
+  @include md{
+    font-size: 24px;
+    margin-top: 40px;
+  }
+}
+
+.shop-select{
+  margin: 35px 0;
+  label{
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  select{
+    width: 25%;
+    font-size: 18px;
+    color: #00000075;
+    padding: 10px;
+    border: 1px solid $gray-400;
+  }
+
+  @include lg{
+    select{
+      width: 40%;
+    }
+  }
+  @include md{
+    label{
+      font-size: 16px;
+    }
+    select{
+      width: calc(100% - 85px);
+    }
+  }
+}
+
+
+/* 門市據點-列表頁 */
+.shopList-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+
+  @include lg{
+    justify-content: space-between;
+  }
+  @include md{
+    margin-bottom: 64px;
+  }
+}
+
+.shopList-card{
+  width: calc( 100% / 3 - 16px) ;
+  margin-bottom: 48px;
+  margin-right: 24px;
+
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+
+  .shopList-info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00000020;
+
+    .shopList-info-title{
+      font-size: 24px;
+      color: $gray-800;
+      padding: 8px 24px;
+      border-bottom: 1px solid #00000020;
+    }
+
+    .shopList-list{
+      padding: 16px 16px 16px 20px;
+      li{
+        font-size: 20px;
+        padding: 4px;
+        color: $gray-800;
+        display: flex;
+
+        span{
+          padding-top: 5px;
+          font-size: 24px;
+          margin-right: 8px;
+          color: $gray-800;
+        }
+      }
+    }
+  }
+  .btn-detail{
+    color: $white;
+    background-color: $black;
+    padding: 16px;
+    text-align: center;
+
+    &:hover{
+      background-color: $primary-dark;
+    }
+  }
+
+  @include lg{
+    width: calc(100% / 2 - 12px);
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+    &:nth-child(3n){
+      margin-right: 24px;
+    }
+  }
+
+  @include md{
+    width: 100%;
+    margin-right: 0;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+
+
+
+/* 門市據點-詳細頁 */
+.shop-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 80px;
+
+  @include lg{
+    flex-wrap: wrap;
+  }
+  @include md{
+    margin-bottom: 64px;
+  }
+}
+
+.shop-card{
+  width: 40%;
+
+  .shop-info{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00000020;
+
+    .shop-info-title{
+      font-size: 24px;
+      color: $gray-800;
+      padding: 8px 24px;
+      border-bottom: 1px solid #00000020;
+    }
+
+    .shop-list{
+      padding: 16px 0 16px 20px;
+      li{
+        font-size: 20px;
+        padding: 4px;
+        color: $gray-800;
+        display: flex;
+
+        span{
+          font-size: 24px;
+          margin-right: 8px;
+          color: $gray-800;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  @include lg{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .shop-pic{
+      width: 50%;
+    }
+
+    .shop-info{
+      width: 50%;
+
+      // .shop-list{
+      //   li{
+      //     align-items: flex-start;
+      //     span{
+      //       padding-top: 3px;
+      //     }
+      //   }
+      // }
+    }
+  }
+  @include md{
+    width: 100%;
+    display: block;
+    .shop-pic{
+      width: 100%;
+    }
+
+    .shop-info{
+      width: 100%;
+
+      // .shop-list{
+      //   li{
+      //     align-items: flex-start;
+      //     span{
+      //       padding-top: 3px;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+.shop-map{
+  width: 60%;
+
+  @include lg{
+    width: 100%;
+  }
+}
