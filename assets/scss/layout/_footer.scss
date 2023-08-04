@@ -96,6 +96,16 @@ footer{
     }
   }
 
+  @include lg{
+    li {
+      margin-right: 16px;
+      a img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
   @include md{
 
     li{

@@ -1,1 +1,47 @@
 /* 常見問題 */
+
+.faq-title{
+  color: $black;
+  border-left: 8px solid $primary;
+  font-size: 48px;
+  font-weight: $font-weight-bold;
+  padding-left: 16px;
+  margin-top: 96px;
+  margin-bottom: 33px;
+
+  @include lg{
+    margin-top: 80px;
+  }
+  @include md{
+    font-size: 24px;
+    margin-top: 40px;
+  }
+}
+
+.faq-subtitle{
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  margin-bottom: 24px;
+}
+
+.faq-box{
+  width: 66%;
+  margin-bottom: 80px;
+
+  li{
+    margin-bottom: 32px;
+    p.question{
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+      margin-bottom: 8px;
+    }
+    p.answer{
+      font-size: 16px;
+    }
+  }
+  @include lg{
+    width: 100%;
+    margin-bottom: 64px;
+  }
+}
+

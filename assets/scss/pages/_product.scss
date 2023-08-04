@@ -1,0 +1,183 @@
+/* 系列鏡框 */
+
+.product-navbar{
+  display: flex;
+  max-width: 1296px;
+  margin: 0 auto;
+
+  li{
+    width: calc(100% / 3);
+    position: relative;
+    text-align: center;
+
+    a{
+      font-size: 32px;
+      font-weight: $font-weight-medium;
+      padding: 24px;
+      color: $black;
+      text-align: center;
+      border-left: 1px solid $gray-300;
+      border-bottom: 1px solid $gray-300;
+      &:nth-last-child(1){
+        border-right: 1px solid $gray-300;
+      }
+
+      &:hover{
+        background-color: $pink;
+      }
+
+      @include lg{
+        font-size: 24px;
+        padding: 16px;
+      }
+      @include md{
+        font-size: 16px;
+      }
+    }
+    .current{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-bottom: 8px solid $primary-dark;
+    }
+  }
+}
+
+.product-header-bg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  .product-header-img{
+    width: 50%;
+  }
+  @include lg{
+    .product-header-img{
+      height: auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @include md{
+    margin-bottom: 40px;
+  }
+}
+
+.product-title{
+  font-family: $font-family-roboto;
+  font-size: 42px;
+  font-weight: $font-weight-medium;
+  color: $black;
+  text-align: center;
+  @include md{
+    font-size: 24px;
+  }
+}
+
+.product-subtitle{
+  font-size: 32px;
+  color: $black;
+  text-align: center;
+  margin-bottom: 32px;
+  @include md{
+    font-size: 24px;
+  }
+}
+
+.product-content{
+  display: flex;
+  flex-wrap: wrap;
+
+  @include md{
+    margin-bottom: 64px;
+  }
+}
+
+.product-card{
+  width: calc(100% / 4 - 18px);
+  margin-right: 24px;
+  margin-bottom: 80px;
+
+  &:nth-child(4n){
+    margin-right: 0;
+  }
+  @include lg{
+    width: calc(100% / 2 - 12px);
+    margin-bottom: 40px;
+
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+  @include md{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.product-card-2{
+  width: calc(100% / 3 - 16px);
+  margin-right: 24px;
+  margin-bottom: 80px;
+
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+  @include lg{
+    width: calc(100% / 2 - 12px);
+    margin-bottom: 40px;
+
+    &:nth-child(3n){
+      margin-right: 24px;
+    }
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+  @include md{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+}
+
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+
+  .card-number{
+    width: 50%;
+    font-size: 24px;
+  }
+  .card-price{
+    width: 50%;
+    font-size: 24px;
+    font-weight: $font-weight-medium;
+    color: $primary;
+    text-align: right;
+  }
+}
+
+.card-color-box{
+  display: flex;
+  .color-1{
+    background-color: $brown;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+  .color-2{
+    background-color: $orange;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+}

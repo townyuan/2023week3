@@ -144,3 +144,193 @@
     }
   }
 }
+
+
+
+
+
+/* 部落格內頁 */
+
+.blog-breadcrumb{
+  display: flex;
+  margin-top: 24px;
+
+  li a{
+    color: $black;
+    &:hover{
+      color: $primary;
+    }
+    span{
+      margin: 0 5px;
+    }
+  }
+  .current{
+    color: $primary;
+
+    &:hover{
+      color: $primary-dark;
+    }
+  }
+}
+
+.blog-tagged{
+  display: flex;
+  margin: 8px 0;
+  li {
+    margin-right: 16px;
+    a{
+      font-size: 24px;
+      color: $primary;
+
+      &:hover{
+        color: $primary-dark;
+      }
+    }
+  }
+}
+
+.blog-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.blog-box{
+  width: 66%;
+
+  h3.blog-content-title{
+    font-size: 48px;
+    font-weight: $font-weight-regular;
+    color: $black;
+  }
+  p{
+    margin-bottom: 16px;
+    font-weight: $font-weight-medium;
+  }
+  @include md{
+    width: 100%;
+  }
+}
+
+.blog-item{
+  margin-bottom: 40px;
+  .blog-item-pic{
+    margin-bottom: 8px;
+  }
+  .blog-item-summary{
+    font-weight: normal;
+  }
+}
+
+.blog-share{
+  display: flex;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid $gray-500;
+  align-items: center;
+
+  span{
+    font-weight: $font-weight-bold;
+    margin-right: 16px;
+  }
+  a img{
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  @include md{
+    display: none;
+  }
+}
+
+.blog-path{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  li{
+    display: flex;
+    align-items: center;
+
+    span.previous{
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    span.next{
+      font-size: 22px;
+      margin-left: 5px;
+    }
+    a{
+      color: $black;
+      &:hover{
+        color: $primary-dark;
+      }
+    }
+  }
+  @include md{
+    display: none;
+  }
+}
+
+.blog-tags-box{
+  width: 34%;
+
+  .blog-tags-title{
+    display: flex;
+    align-items: center;
+
+    span{
+      font-size: 45px;
+      font-weight: $font-weight-bold;
+      color: $primary;
+      margin-right: 12px;
+    }
+    p{
+      display: inline-block;
+      font-size: 32px;
+      font-weight: $font-weight-bold;
+      color: $primary;
+    }
+    @include lg{
+      span{
+        font-size: 20px;
+        margin-right: 2px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+
+  ul{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    li a{
+      margin-right: 24px;
+      font-size: 24px;
+      font-weight: $font-weight-bold;
+      color: $primary;
+
+      &:hover{
+        color: $primary-dark;
+      }
+    }
+    @include lg{
+      width: 90%;
+      li a{
+        margin-right: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+  @include md{
+    display: none;
+  }
+}
+
+
